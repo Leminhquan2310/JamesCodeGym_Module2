@@ -1,17 +1,17 @@
 package org.example;
 
 public class Calculator {
-    public static int calculate(int a, int b, char o) {
-        switch (o) {
+    public static int calculate(int firstOperand, int secondOperand, char operator) {
+        switch (operator) {
             case '+':
-                return a + b;
+                return firstOperand + secondOperand;
             case '-':
-                return a - b;
+                return firstOperand - secondOperand;
             case '*':
-                return a * b;
+                return firstOperand * secondOperand;
             case '/':
-                if (b != 0)
-                    return a / b;
+                if (secondOperand != 0)
+                    return firstOperand / secondOperand;
                 else
                     throw new RuntimeException("Can not divide by 0");
             default:
