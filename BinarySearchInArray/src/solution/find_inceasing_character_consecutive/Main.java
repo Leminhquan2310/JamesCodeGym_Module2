@@ -84,5 +84,7 @@ public class Main {
         }
 
         System.out.println("Result: " + inputString.substring(maxStart, maxStart + maxLen));
+
+        // O(n)
     }
 }
