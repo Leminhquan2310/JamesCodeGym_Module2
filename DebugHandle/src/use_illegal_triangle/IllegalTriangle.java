@@ -1,5 +1,7 @@
 package use_illegal_triangle;
 
+import java.io.FileReader;
+
 public class IllegalTriangle {
 
     public static void main(String[] args) {
@@ -12,10 +14,11 @@ public class IllegalTriangle {
         }
     }
 
-    public static void checkTriangle (double x, double y, double z) throws IllegalTriangleException {
+    public static void checkTriangle(double x, double y, double z) throws IllegalTriangleException {
         if (x <= 0 || y <= 0 || z <= 0) {
             throw new IllegalTriangleException("Các cạnh phải > 0");
-        };
+        }
+        ;
 
         if (x + y <= z || x + z <= y || y + z <= x) {
             throw new IllegalTriangleException("Tổng hai cạnh phải lớn hơn cạnh còn lại");
