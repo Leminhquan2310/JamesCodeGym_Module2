@@ -9,6 +9,5 @@ public class FactoryDemo {
 
         Animal a2 = animalFactory.getAnimal("canine");
         System.out.println("a1 sound: " + a2.makeSound());
-
     }
 }
