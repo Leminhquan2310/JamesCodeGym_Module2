@@ -10,9 +10,10 @@ public class UserController {
 
     public void add(User user) {
         this.user = user;
+        this.store();
     }
 
-    public void store() {
+    private void store() {
         userStorage.store(user);
     }
 }

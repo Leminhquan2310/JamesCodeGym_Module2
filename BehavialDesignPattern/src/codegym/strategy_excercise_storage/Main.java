@@ -6,11 +6,10 @@ public class Main {
         UserController userController = new UserController();
 
         // create user
-        userController.add( new User(1, "Quan"));
         userController.setUserStorage(new XMLStorage());
-        userController.store();
+        userController.add(new User(1, "Quan"));
 
         userController.setUserStorage(new MySQLStorage());
-        userController.store();
+        userController.add(new User(2, "Minh"));
     }
 }
